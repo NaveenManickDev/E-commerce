@@ -12,7 +12,7 @@ export default function ProductDetail() {
     useEffect(() => {
         const fetchProduct = async () => {
             try {
-                const res = await fetch(`http://localhost:5000/api/products/${id}`);
+                const res = await fetch(`https://e-commerce-backend-j0qp.onrender.com/api/products/${id}`);
                 const data = await res.json();
                 setProduct(data);
             } catch (err) {
